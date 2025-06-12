@@ -1,27 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Website - Marissa</title>
+    <title>Portfolio Website - Marissa Alpiani</title>
 
     <!-- CSS External -->
-    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
     <!-- Header Content -->
-    <header>
+    <header class="main-header">
+        <!-- Logo Website -->
+        <div class="main-logo"></div>
 
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+        <!-- Navbar -->
+        <nav class="main-nav" id="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#portofolio">Portofolio</a>
+            <a href="#experience">Experience</a>
+            <a href="#publication">Publication</a>
+            <a href="#education">Education</a>
+            <a href="#message-us">Message Us</a>
+        </nav>
     </header>
-    
+</body>
+
+    <hr />
+
     <!-- Main Content -->
     <main>
+        <!-- Home Section -->
+        <section id="home">
+            <!-- <h1>Hi there, Welcome to my portfolio website!</h1> -->
+            <!-- <p>My name is Marissa Alpiani, and I am a Bachelor of Science.</p> -->
 
-    </main>
+           <!-- Banner Section -->
+            <div class="banner-img img-1"></div>
+            <div class="banner-img img-2"></div>
+            <div class="banner-img img-3"></div>
+            <div class="banner-img img-4"></div>
+
+        </section>
+
+        <!-- <hr /> -->
+
+        <!-- About -->
+
+        <section id="about">
+  <div class="about-container">
+    <div class="about-box">
+      <h1>About</h1>
+      <h2>
+        Saya Marissa Alpiani, seorang pegiat sains dengan latar belakang di bidang Fisika yang berfokus pada Instrumentasi dan Komputasi. 
+        Saya telah terlibat dalam berbagai proyek penelitian, seperti sistem Wireless Power Transfer (WPT) serta sensor Giant Magneto Resistance (GMR) untuk deteksi bahan halal dan haram.
+        <br><br>
+        Di luar dunia riset, saya aktif dalam kegiatan sosial dan pendidikan, mulai dari mengajar robotik dan sains kepada siswa sekolah dasar, sosialisasi sejarah robotika dan implementasinya. 
+        Saya juga telah ikut serta dalam publikasi karya ilmiah, baik berupa buku maupun paten sederhana yang berkaitan dengan teknologi.
+        <br><br>
+        Saya memiliki semangat untuk menggabungkan ilmu pengetahuan, pendidikan, dan kontribusi sosial demi menciptakan dampak yang nyata.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+        <!-- <hr /> -->
+
+         <!-- Portofolio -->
+        <section id="portofolio">
+            <h1 class="section-title">Portofolio</h1>
+            <p style="text-align: center;">
+                Beberapa hasil proyek sederhana yang telah dikerjakan sebagai bentuk implementasi dari keahlian di bidang instrumentasi dan komputasi.
+            </p>
+                        
+  <div class="portfolio-container">
+    <!-- Card 1 -->
+    <div class="portfolio-card">
+      <img src="./porto/alat1.jpg" alt="Alat Resistivity" />
+      <h3>Alat Resistivity</h3>
+      <p>Sebuah alat sederhana yang dapat mengukur perubahan hambatan jenis suatu material.</p>
+      <a href="#" class="project-button">Lihat Proyek</a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="portfolio-card">
+      <img src="./porto/alat2.jpg" alt="Wireless Power Transfer" />
+      <h3>Wireless Power Transfer</h3>
+      <p>Sebuah alat sederhana yang dapat digunakan sebagai simulasi dari transfer daya nirkabel dengan visualisasi data secara real-time pada komputer.</p>
+      <a href="#" class="project-button">Lihat Proyek</a>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="portfolio-card">
+      <img src="./porto/alat3.jpg" alt="GMR (Giant Magneto Resistance)" />
+      <h3>GMR (Giant Magneto Resistance)</h3>
+      <p>Sebuah alat yang dapat digunakan untuk mendeteksi halal/haram suatu makanan dengan menggunakan perubahan magnetik yang terdeteksi.</p>
+      <a href="#" class="project-button">Lihat Proyek</a>
+    </div>
+  </div>
+</section>
+
+
+        <!-- <hr /> -->
+
+<!-- Experience -->
+<section id="experience">
+  <h1 class="section-title">Experience</h1>
+  <p style="text-align: center;">
+    Beberapa pengalaman profesional dan sosial yang telah saya jalani dalam bidang pendidikan, penelitian, dan pengabdian masyarakat.
+  </p>
+
+  <div class="experience-container">
+    <!-- Card 1 -->
+    <div class="experience-card">
+      <img src="./experience/sosialisasi3.jpg" alt="Mengajar Robotik" />
+      <h3>Mengajar Robotik</h3>
+      <p>Membimbing siswa sekolah dasar dalam ekstrakurikuler robotik, mengenalkan dasar elektronika dan pemrograman.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="experience-card">
+      <img src="./experience/sosialisasi2.JPG" alt="Penelitian GMR" />
+      <h3>Penelitian GMR</h3>
+      <p>Melakukan riset tentang sensor Giant Magneto Resistance (GMR) untuk halal detector.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="experience-card">
+      <img src="./experience/sosialisasi1.jpg" alt="Kegiatan Sosial" />
+      <h3>Kegiatan Sosial & Edukasi</h3>
+      <p>Aktif dalam program mengenalkan sejarah robotik dan implementasinya pada siswa.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Publication -->
+<section id="publication">
+  <h1 class="section-title">Publication</h1>
+  <p style="text-align: center;">
+    Beberapa karya ilmiah dan paten yang telah saya terbitkan.
+  </p>
+
+  <div class="publication-container">
+    <!-- Publication 1 -->
+    <div class="publication-card">
+      <img src="./publication/penerbitanbuku.jpg" alt="Buku Kalender Astronomi" />
+      <h3>Buku Kalender Astronomi</h3>
+      <p>Berisi perhitungan kalender astronomi Kiai Muhammad Shalih Al-Fathani.</p>
+      <a href="https://contoh-link-buku1.com" class="project-button" target="_blank">Lihat Proyek</a>
+    </div>
+
+    <!-- Publication 2 -->
+    <div class="publication-card">
+      <img src="./publication/paten1.png" alt="Paten Osilasi Pegas Berbasis Mikrokontroler" />
+      <h3>Paten Osilasi Pegas Berbasis Mikrokontroler</h3>
+      <p>Paten sederhana yang berisi visualisasi osilasi pegas pada komputer secara real-time.</p>
+      <a href="https://pdki-indonesia.dgip.go.id:/link/5330303230323430333734367c706174656e74" class="project-button" target="_blank">Lihat Proyek</a>
+    </div>
+
+    <!-- Publication 3 -->
+    <div class="publication-card">
+      <img src="./publication/paten2.png" alt="Paten Light Follower" />
+      <h3>Paten Light Follower</h3>
+      <p>Paten sederhana robot yang bergerak mengikuti pantulan cahaya pada jalurnya.</p>
+      <a href="https://pdki-indonesia.dgip.go.id:/link/5330303230323430333734347c706174656e7" class="project-button" target="_blank">Lihat Proyek</a>
+    </div>
+
+    <!-- Publication 4 -->
+    <div class="publication-card">
+      <img src="./publication/paten3.png" alt="Paten Transfer Daya Nirkabel" />
+      <h3>Paten Transfer Daya Nirkabel</h3>
+      <p>Paten sederhana berisi alat transfer daya nirkabel.</p>
+      <a href="https://pdki-indonesia.dgip.go.id:/link/5330303230323430333734357c706174656e74" class="project-button" target="_blank">Lihat Proyek</a>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Education -->
+<section id="education">
+<h1 class="section-title">Education</h1>
+  <p style="text-align: center;">
+    Pendidikan Formal yang telah ditempuh.
+  </p>
+
+  <div class="education-container">
+    <!-- Education 1 -->
+    <div class="education-card">
+      <img src="./education/sma.png" alt="SMAN 1 Pabuaran" />
+      <h3>SMAN 1 Pabuaran</h3>
+      <p>Telah menempuh pendidikan SMA dan lulus pada tahun 2021.</p>
+    </div>
+
+    <!-- Education 2 -->
+    <div class="education-card">
+      <img src="./education/uin.png" alt="UIN Sunan Gunung Djati Bandung" />
+      <h3>UIN Sunan Gunung Djati Bandung</h3>
+      <p>Telah menempuh studi lanjut dalam program sarjana Fisika dan lulus pada tahun 2025</p>
+    </div>
+        <!-- <hr /> -->
+
+
+<!-- Massage-Us -->
+       <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Message Us</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nama Lengkap:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                
+
+                
+                <div class="form-group">
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <span class="error-message" id="message-error"></span>
+                </div>
+                
+                <button type="submit">Kirim Pesan</button>
+            </form>
+            
+            <div id="form-result" class="form-result">
+               <div id="result"></div>
+
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      const resultHTML = `
+        <h3>Terima Kasih Telah Menghubungi Kami</h3>
+        <p><strong>Nama:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Pesan:</strong> ${message}</p>
+      `;
+
+      document.getElementById("result").innerHTML = resultHTML;
+
+      // (Opsional) Reset form
+      document.getElementById("contact-form").reset();
+    });
+  </script>
+
+            </div>
+        </div>
+    </section>
 
     <!-- Footer Content -->
     <footer>
-
+        <p>&copy; 2025 Marissa Alpiani. All rights reserved.</p>
     </footer>
+
+    <!-- JS External -->
+    <script src="js/script.js"></script>
 </body>
+
 </html>
